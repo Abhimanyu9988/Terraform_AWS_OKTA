@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "okta" {
-  api_token = "00tVrJldhCQ_oM0JxKS-Gmmp_1YmTQDJYCZVHMvIQy"
+  api_token = "XXXXXXXXXXX""
   base_url = "okta.com"
-  org_name = "trial-5680348"
+  org_name = "trial-XXXXX"
 }
 
 
@@ -26,7 +26,7 @@ resource "okta_app_saml" "okta_aws_application" {
   "awsEnvironmentType":"aws.amazon",
   "joinAllRoles": true,
   "loginURL": "https://console.aws.amazon.com/ec2/home",
-  "roleValuePattern": "arn:aws:iam::778192218178:saml-provider/OKTA",
+  "roleValuePattern": "arn:aws:iam::XXXXXX:saml-provider/XXXX",
   "sessionDuration": 3600,
   "useGroupMapping": false
 }
