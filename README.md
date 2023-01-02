@@ -1,2 +1,2 @@
 # Terraform-AWS-Okta
-# Terraform_AWS_OKTA
+# This TF template allows you to configure SAML 2.0 authentication between OKTA and AWS
