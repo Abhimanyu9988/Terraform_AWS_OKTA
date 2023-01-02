@@ -42,7 +42,7 @@ resource "aws_ram_resource_share" "sharewithunifort" {
 ### AWS RAM Resource Share association
 ### For more
 resource "aws_ram_resource_association" "resourceforsubnet" {
-  resource_arn       = "arn:aws:ec2:us-east-1:778192218178:subnet/subnet-0d4dde89b8b556ffc"   ###Need to create them via terraform
+  resource_arn       = "arn:aws:ec2:us-east-1:XXXXXXX:subnet/subnet-0d4dde89b8b556ffc"   ###Need to create them via terraform
   resource_share_arn = aws_ram_resource_share.sharewithunifort.arn
 
 }
@@ -115,7 +115,7 @@ resource "aws_iam_role" "role_for_okta_access" {
     {
       "Effect": "Allow",
       "Principal": {
-        "Federated": "arn:aws:iam::778192218178:saml-provider/OktaPersonal"
+        "Federated": "arn:aws:iam::XXXXXX:saml-provider/XXXXXXX"
       },
       "Action": "sts:AssumeRoleWithSAML",
       "Condition": {
